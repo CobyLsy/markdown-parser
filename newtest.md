@@ -4,4 +4,4 @@
 [SCDSWebsite](https://savcds.org)
 [UCSDWebsite](https://ucsd.edu)
 [asfadgfdgafghafghaa](labreport1.html)
-[agfhdfhagbhksddgav k[]bavl](cse15l).ucsd.edu)
+[agfhdfhagbhksddgav bavl](cse15l.ucsd.edu)
