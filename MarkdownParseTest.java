@@ -31,5 +31,14 @@ public class MarkdownParseTest extends MarkdownParse{
         List<String> list = List.of("https://something.com", "some-thing.html");
         assertEquals(list, Links);
     }
+    
+    @Test
+    public void getLinksTest2() {
+        filename = Path.of("test-file2.md");
+        content = Files.readString(filename);
+        Links = getLinks(content);
+        List<String> list = List.of("https://something.com", "some-thing.html");
+        assertEquals(list, Links);
+    }
 
 }
