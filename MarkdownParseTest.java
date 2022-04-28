@@ -10,8 +10,11 @@ import org.junit.*;
 
 public class MarkdownParseTest extends MarkdownParse{
     private String content;
+    private String content2;
     private ArrayList<String> Links;
+    private ArrayList<String> Links2;
     Path filename;
+    Path filename2;
 
 
     @Before
@@ -19,6 +22,9 @@ public class MarkdownParseTest extends MarkdownParse{
         filename = Path.of("test-file.md");
         content = Files.readString(filename);
         Links = getLinks(content);
+        filename2 = Path.of("test-file2.md");
+        content2 = Files.readString(filename2);
+        Links2 = getLinks(content2);
     }
 
     @Test
@@ -34,11 +40,9 @@ public class MarkdownParseTest extends MarkdownParse{
     
     @Test
     public void getLinksTest2() {
-        filename = Path.of("test-file2.md");
-        content = Files.readString(filename);
-        Links = getLinks(content);
+        
         List<String> list = List.of("https://something.com", "some-thing.html");
-        assertEquals(list, Links);
+        assertEquals(list, Links2);
     }
 
 }
