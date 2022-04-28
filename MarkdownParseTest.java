@@ -41,7 +41,7 @@ public class MarkdownParseTest extends MarkdownParse{
     @Test
     public void getLinksTest2() {
         
-        List<String> list = List.of("https://something.com", "some-thing.html");
+        List<String> list = List.of("https://something.com, some-page.html");
         assertEquals(list, Links2);
     }
 
